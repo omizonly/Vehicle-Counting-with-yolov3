@@ -18,10 +18,12 @@ memory = {}
 line = [(0, 200), (1280, 200)]
 counter = 0
 
+inp = input("Enter the input path : ")
+oup = input("Enter the output path : ")
 
 ap = argparse.ArgumentParser()
-ap.add_argument('--input', type= str, default='input/cars.mp4', help='path of input video')
-ap.add_argument('--output', type= str, default= 'output/cars.mp4', help='path of output video')
+ap.add_argument('--input', type= str, default=inp, help='path of input video')
+ap.add_argument('--output', type= str, default= oup+'/cars.mp4', help='path of output video')
 ap.add_argument('--yolo', type= str, default= 'yolo', help='path of yolo models')
 ap.add_argument('--threshold', type= float, default= 0.3, help='insert threshold value')
 ap.add_argument('--confidence', type= float, default= 0.5, help='insert conf. value')
