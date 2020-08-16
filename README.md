@@ -1,5 +1,5 @@
 # Vehicle-Counting-with-yolov3
-Count Number of cars in the video crossing the ROI line
+Count Number of cars in the video crossing the ROI line. object tracking using yolov3.
 # Quick-Start
 1. Install requirements.txt
 2. Download yolov3 pretrained weight from [here](https://pjreddie.com/media/files/yolov3.weights)
